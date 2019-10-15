@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Account</title>
+</head>
+<body>
+<script>
+    let inEmail = prompt("Nhập Account");
+    let regEx = /^[_a-z0-9]{6,}$/;
+    if (regEx.test(inEmail)){
+        alert("Account hợp lệ");
+    }else {
+        alert("Account không hợp lệ");
+    }
+</script>
+</body>
+</html>
